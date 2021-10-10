@@ -10,7 +10,6 @@ const AlertState = (props) => {
 
 	//set alert
 	const setAlert = (msg, type) => {
-		console.log('alert stat' + msg);
 		dispatch({ type: SET_ALERT, payload: { msg, type } });
 		setTimeout(() => dispatch({ type: REMOVE_ALERT }), 3000);
 	};
